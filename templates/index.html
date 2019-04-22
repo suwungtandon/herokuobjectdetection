@@ -2,33 +2,40 @@
 
 <html>
    <head>
-		<title>Object Detection</title>
-		<meta charset="utf-8" />
-      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
-      <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
-		<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+	<title>Object Detection</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="{{ url_for('static',filename='App-Twitter-icon.png') }}" />
+      	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+      	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}"/>
 
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head> 
     
    <body>
-         <section id="header">
-				<div class="inner">
-					<span class="icon major fa-twitter"></span>
-					<h1>Object Detection</h1>
-               <br><br><br><br>
-                  <form action = "/" method = "POST"
-                   enctype = "multipart/form-data">
-                  <input type = "file" name = "file" />
-                  <input type = "submit"/>
-               <br><br><br><br>
-                  All data from input to output is loaded through in memory buffer <br> so it might take time <b> O(H x W x C) </b>
-               <br><br>
-               </form>
+        <section id="header">
+	<div class="inner">
+	<span class="icon major fa-twitter"></span>
+		<h1>Object Detection</h1>
+               		<br><br><br><br>
+		<ul class="actions">
+			<form name="myform" action="javascript:handleIt()">
+                	<form action = "/" method = "POST" enctype = "multipart/form-data">
+                	<label class="file">
+  				<input type="file" id="file" aria-label="File browser example">
+  				<span class="file-custom"></span>
+			</label>
+                	<input type = "submit"/>
+               		<br><br><br><br>
+                		All data from input to output is loaded through in memory buffer <br> so it might take time <b> O(H x W x C) </b>
+               		<br><br>
+               		</form>
+	</ul>
+	</div>
          </section> 
          <section id="footer">
 			<ul class="icons">
