@@ -22,15 +22,12 @@
 		<h1>Object Detection</h1>
                		<br><br><br><br>
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-		</div>
-		<div class="col-sm-4">
-			<h2 class="page-header">Form Upload Gambar</h2>
-			<form action="/" method="POST" enctype="multipart/form-data">
-				<div class="form-group">
-					<label>Gambar</label><br>
-					<input type="file" class="form-control" name="foto">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2 class="page-header">Form Upload Gambar</h2>
+					<form action="/" method="POST" enctype="multipart/form-data">
+					<div class="form-group">
+						<input type="file" class="form-control" name="file">
 					<br>
                 	<!--<form action = "/" method = "POST" enctype = "multipart/form-data">
 			<label for="file-upload" class="custom-file-upload">
@@ -38,10 +35,10 @@
 			</label>
 			<input id="file-upload" type="file"/>-->
                 	<!-- <input type = "file" name = "file" /> -->
-                	<input type = "submit"/>
-               		<br><br><br><br>
-                		All data from input to output is loaded through in memory buffer <br> so it might take time <b> O(H x W x C) </b>
-               		<br><br>
+                				<input type = "submit"/><br>
+                		Semua data dari input ke output dimuat melalui buffer memori Situs sehingga memungkinkan butuh waktu <b> O(H x W x C) itu sendiri dimensi gambar yang ditraining<br>
+				Object(Height x Weight x Channel), Yang terakhir untuk diperhatikan adalah bahwa saya menggunakan notasi HxWxC sementara konvensi Pytorch adalah CxHxW tetapi penalaran tetap tidak berubah.
+               		<br>
                		</form>
 	</ul>
 	</div>
@@ -55,7 +52,7 @@
 				<li><a href="mailto:suwungtandon@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
-					<li>Tandon Suwung</li><li>2018</li>
+					<li>Tandon Suwung</li><li>2019</li>
 			</ul>
 			
 		</section>
