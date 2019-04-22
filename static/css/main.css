@@ -2602,6 +2602,7 @@
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
+	input[type="file"]:hover,
 		button:hover,
 		.button:hover {
 			background-color: rgba(144, 144, 144, 0.075);
@@ -2610,6 +2611,7 @@
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
+	input[type="file"]:active,
 		button:active,
 		.button:active {
 			background-color: rgba(144, 144, 144, 0.2);
@@ -2618,6 +2620,7 @@
 		input[type="submit"].icon,
 		input[type="reset"].icon,
 		input[type="button"].icon,
+	input[type="file"].icon,
 		button.icon,
 		.button.icon {
 			padding-left: 1.35em;
@@ -2626,6 +2629,7 @@
 			input[type="submit"].icon:before,
 			input[type="reset"].icon:before,
 			input[type="button"].icon:before,
+	input[type="file"].icon:before,
 			button.icon:before,
 			.button.icon:before {
 				margin-right: 0.5em;
@@ -2634,6 +2638,7 @@
 		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
+	input[type="file"].fit,
 		button.fit,
 		.button.fit {
 			display: block;
@@ -2644,6 +2649,7 @@
 		input[type="submit"].small,
 		input[type="reset"].small,
 		input[type="button"].small,
+input[type="file"].small,
 		button.small,
 		.button.small {
 			font-size: 0.7em;
@@ -2652,6 +2658,7 @@
 		input[type="submit"].big,
 		input[type="reset"].big,
 		input[type="button"].big,
+input[type="file"].big,
 		button.big,
 		.button.big {
 			font-size: 1.25em;
@@ -2660,6 +2667,7 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		input[type="button"].special,
+input[type="file"].special,
 		button.special,
 		.button.special {
 			background-color: #555;
@@ -2670,6 +2678,7 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
+input[type="file"].special:hover,
 			button.special:hover,
 			.button.special:hover {
 				background-color: #626262;
@@ -2678,6 +2687,7 @@
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
 			input[type="button"].special:active,
+input[type="file"].special:active,
 			button.special:active,
 			.button.special:active {
 				background-color: #484848;
@@ -2687,7 +2697,7 @@
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
 		input[type="button"].disabled,
-		input[type="button"]:disabled,
+input[type="file"]:disabled,
 		button.disabled,
 		button:disabled,
 		.button.disabled,
@@ -2737,6 +2747,7 @@
 			.main.style2 input[type="submit"],
 			.main.style2 input[type="reset"],
 			.main.style2 input[type="button"],
+.main.style2 input[type="file"],
 			.main.style2 button,
 			.main.style2 .button {
 				box-shadow: inset 0 0 0 1px #ffffff;
@@ -2746,6 +2757,7 @@
 				.main.style2 input[type="submit"]:hover,
 				.main.style2 input[type="reset"]:hover,
 				.main.style2 input[type="button"]:hover,
+.main.style2 input[type="file"]:hover,
 				.main.style2 button:hover,
 				.main.style2 .button:hover {
 					background-color: rgba(255, 255, 255, 0.125);
@@ -2754,6 +2766,7 @@
 				.main.style2 input[type="submit"]:active,
 				.main.style2 input[type="reset"]:active,
 				.main.style2 input[type="button"]:active,
+.main.style2 input[type="file"]:active,
 				.main.style2 button:active,
 				.main.style2 .button:active {
 					background-color: rgba(255, 255, 255, 0.25);
@@ -2762,6 +2775,7 @@
 				.main.style2 input[type="submit"].special,
 				.main.style2 input[type="reset"].special,
 				.main.style2 input[type="button"].special,
+.main.style2 input[type="file"].special,
 				.main.style2 button.special,
 				.main.style2 .button.special {
 					background-color: #ffffff;
@@ -2772,6 +2786,7 @@
 					.main.style2 input[type="submit"].special:hover,
 					.main.style2 input[type="reset"].special:hover,
 					.main.style2 input[type="button"].special:hover,
+.main.style2 input[type="file"].special:hover,
 					.main.style2 button.special:hover,
 					.main.style2 .button.special:hover {
 						background-color: rgba(255, 255, 255, 0.125) !important;
@@ -2781,6 +2796,7 @@
 					.main.style2 input[type="submit"].special:active,
 					.main.style2 input[type="reset"].special:active,
 					.main.style2 input[type="button"].special:active,
+.main.style2 input[type="file"].special:active,
 					.main.style2 button.special:active,
 					.main.style2 .button.special:active {
 						background-color: rgba(255, 255, 255, 0.25) !important;
@@ -2832,6 +2848,7 @@
 		#header input[type="submit"],
 		#header input[type="reset"],
 		#header input[type="button"],
+#header input[type="file"],
 		#header button,
 		#header .button {
 			box-shadow: inset 0 0 0 1px #ffffff;
@@ -2841,6 +2858,7 @@
 			#header input[type="submit"]:hover,
 			#header input[type="reset"]:hover,
 			#header input[type="button"]:hover,
+#header input[type="file"]:hover,
 			#header button:hover,
 			#header .button:hover {
 				background-color: rgba(255, 255, 255, 0.125);
@@ -2849,6 +2867,7 @@
 			#header input[type="submit"]:active,
 			#header input[type="reset"]:active,
 			#header input[type="button"]:active,
+#header input[type="file"]:active,
 			#header button:active,
 			#header .button:active {
 				background-color: rgba(255, 255, 255, 0.25);
@@ -2857,6 +2876,7 @@
 			#header input[type="submit"].special,
 			#header input[type="reset"].special,
 			#header input[type="button"].special,
+#header input[type="file"].special,
 			#header button.special,
 			#header .button.special {
 				background-color: #ffffff;
@@ -2867,6 +2887,7 @@
 				#header input[type="submit"].special:hover,
 				#header input[type="reset"].special:hover,
 				#header input[type="button"].special:hover,
+#header input[type="file"].special:hover,
 				#header button.special:hover,
 				#header .button.special:hover {
 					background-color: rgba(255, 255, 255, 0.125) !important;
@@ -2876,6 +2897,7 @@
 				#header input[type="submit"].special:active,
 				#header input[type="reset"].special:active,
 				#header input[type="button"].special:active,
+#header input[type="file"].special:active,
 				#header button.special:active,
 				#header .button.special:active {
 					background-color: rgba(255, 255, 255, 0.25) !important;
@@ -3017,6 +3039,7 @@
 		#footer input[type="submit"],
 		#footer input[type="reset"],
 		#footer input[type="button"],
+#footer input[type="file"],
 		#footer button,
 		#footer .button {
 			box-shadow: inset 0 0 0 1px #ffffff;
@@ -3026,6 +3049,7 @@
 			#footer input[type="submit"]:hover,
 			#footer input[type="reset"]:hover,
 			#footer input[type="button"]:hover,
+#footer input[type="file"]:hover,
 			#footer button:hover,
 			#footer .button:hover {
 				background-color: rgba(255, 255, 255, 0.125);
@@ -3034,6 +3058,7 @@
 			#footer input[type="submit"]:active,
 			#footer input[type="reset"]:active,
 			#footer input[type="button"]:active,
+#footer input[type="file"]:active,
 			#footer button:active,
 			#footer .button:active {
 				background-color: rgba(255, 255, 255, 0.25);
@@ -3042,6 +3067,7 @@
 			#footer input[type="submit"].special,
 			#footer input[type="reset"].special,
 			#footer input[type="button"].special,
+#footer input[type="file"].special,
 			#footer button.special,
 			#footer .button.special {
 				background-color: #ffffff;
@@ -3052,6 +3078,7 @@
 				#footer input[type="submit"].special:hover,
 				#footer input[type="reset"].special:hover,
 				#footer input[type="button"].special:hover,
+#footer input[type="file"].special:hover,
 				#footer button.special:hover,
 				#footer .button.special:hover {
 					background-color: rgba(255, 255, 255, 0.125) !important;
@@ -3061,6 +3088,7 @@
 				#footer input[type="submit"].special:active,
 				#footer input[type="reset"].special:active,
 				#footer input[type="button"].special:active,
+#footer input[type="file"].special:active,
 				#footer button.special:active,
 				#footer .button.special:active {
 					background-color: rgba(255, 255, 255, 0.25) !important;
@@ -3374,6 +3402,8 @@
 			input[type="submit"],
 			input[type="reset"],
 			input[type="button"],
+		input[type="file"],
+
 			.button {
 				padding: 0;
 			}
