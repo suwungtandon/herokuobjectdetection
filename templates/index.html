@@ -23,29 +23,21 @@
 						<h1>OBJECT DETECTION WITH PYTHON FLASK OPENCV</h1>
 							<p>Semua data dari input ke output dimuat melalui buffer memori Situs sehingga memungkinkan butuh waktu</br>
 							<p>O(H x W x C) itu sendiri dimensi gambar yang ditraining, Out(Height x Weight x Channel)</br>
-	   						<p>Yang terakhir untuk diperhatikan adalah bahwa saya menggunakan notasi (HxWxC) </br> 
-							sementara konvensi Pytorch adalah CxHxW tetapi penalaran tetap tidak berubah.</br>
-							</p>	
+	   						
 		<br>
 		<div class="container">
 		<div class="row">
 		<div class="col-sm-4">
 			</div>
 			<div class="col-sm-4">
+				<h2 class="page-header">Form Upload Gambar</h2>
 					<form action="/" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<input type="file" class="form-control" name="file">
-						<br>
-					</div>
-						
-                	<!--<form action = "/" method = "POST" enctype = "multipart/form-data">
-			<label for="file-upload" class="custom-file-upload">
-    			<i class="fa fa-cloud-upload"></i> Custom Upload
-			</label>
-			<input id="file-upload" type="file"/>-->
-                	<!-- <input type = "file" name = "file" /> -->
-                				<input type = "submit"/>
-						<br><br>
+					</div>	
+                	              	<div>
+						<input type = "submit"/>
+					</div>	
 					</form>
 			</div>
 		</div>
